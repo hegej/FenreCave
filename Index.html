@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fenris Ulvens Hule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Fenris Ulvens Hule</h1>
+        <div class="content-container">
+            <div class="video-container">
+                <video class="central-video" autoplay loop muted playsinline>
+                    <source src="FenrisUlv.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div id="text-box">
+                <p>Du har nå trådt inn i Fenris Ulvens hule. Der ser du alle påskeharens egg.</p>
+                <p>Fenris Ulven løfter hode for å se på deg og knurrer...</p>
+                <p>Han vil aldri la deg ta eggene fra ham, og jeg er ikke så sikker på at han vil la deg komme ut
+                    levende heller...</p>
+                <p>Jeg håper du kjenner noen av sagaene om de nordiske gudene.</p>
+                <p>For å overvinne Fenris, sønn av Loke, må du binde ham slik Tyr og Odin gjorde i ett forsøk på å
+                    hindre Ragnarok.</p>
+
+                <p class="introduction-last-paragraph">
+                    <strong>Oppgave</strong>
+                </p>
+                <p>Hvordan vil du klare å binde Fenrisulven slik Tyr og Odin gjorde, og overvinne ham?</p>
+                <ol>
+                    <li><button id="answer1" onClick="showFeedback(1)">Bruke makt for å overmanne Fenrisulven.</button>
+                    </li>
+                    <li><button id="answer2" onClick="showFeedback(2)">Utfordre Fenrisulven til kamp i håp om at han
+                            respekterer vinneren og tillater seg å bli bundet.</button></li>
+                    <li><button id="answer3" onClick="showFeedback(3)">Foreslå en styrkeprøve hvor Fenrisulven lar seg
+                            binde med et bånd for å bevise sin styrke, og en på teamet viser tillit ved å legge sin hånd
+                            i hans kjeft som en sikkerhet.</button></li>
+                    <li><button id="answer4" onClick="showFeedback(4)">Tilby Fenrisulven en gave som et tegn på fred, i
+                            håp om at han godtar denne gesten og tillater seg selv å bli bundet.</button></li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="feedback" class="text-box" style="display: none;">
+        </div>
+        <div id="team-name-prompt" style="display: none;">
+            <p>Please enter your team name:</p>
+            <input type="text" id="team-name" placeholder="Team Name" />
+            <button onclick="sendTeamName()">Send</button>
+        </div>
+        
+        <footer>
+            <p>&copy; 2021 Fenris Ulvens Hule</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>
