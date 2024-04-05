@@ -43,7 +43,7 @@ function sendTeamName() {
         TeamName: teamName
     };
 
-    fetch(' https://localhost:7202/api/EasterWinner', {
+    fetch('https://ldcr4ght-7202.euw.devtunnels.ms/api/EasterWinner', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
